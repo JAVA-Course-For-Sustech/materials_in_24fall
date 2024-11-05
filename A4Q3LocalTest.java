@@ -10,9 +10,9 @@ public class A4Q3LocalTest {
     @BeforeEach
     public void resetId(){
         try {
-            Field fieldId= Student.class.getDeclaredField("id");
-            fieldId.setAccessible(true);
-            fieldId.set(null, 0);
+            Field fieldCount= Student.class.getDeclaredField("count");
+            fieldCount.setAccessible(true);
+            fieldCount.set(null, 0);
         } catch (NoSuchFieldException | IllegalAccessException e) {
             throw new RuntimeException(e);
         }
