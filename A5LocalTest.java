@@ -350,9 +350,9 @@ public class A5LocalTest {
         assertEquals("Player 3: at 10, has 10.0", gameSystem.currentPlayersState()[2]);
         assertEquals("Land YELLOW: [H P2: 80]", gameSystem.currentLandsState()[2]);
 
-        gameSystem.nextTurn(5, 50);//13 Land YELLOW:
-        gameSystem.nextTurn(3, 0);//13 Land YELLOW:
-        gameSystem.nextTurn(3, 0);//13 Land YELLOW:
+        gameSystem.nextTurn(5, 50);//13 Land ORANGE:
+        gameSystem.nextTurn(3, 0);//13 Land ORANGE:
+        gameSystem.nextTurn(3, 0);//13 Land ORANGE:
 
         assertEquals("Player 1: at 13, has 35.0", gameSystem.currentPlayersState()[0]);
         assertEquals("Player 2: at 13, has 15.0", gameSystem.currentPlayersState()[1]);
